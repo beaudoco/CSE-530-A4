@@ -23,7 +23,7 @@ from common import MemConfig
 import a4CPUConfig
 
 def addAdditionalOptions(parser):
-    parser.add_argument("--cse530-core-config", type = str, default = "large",
+    parser.add_argument("--cse530-core-config", type = int, default = 1,
                       help = "Large or small")
 
     parser.add_argument("--binfile", type = str, default = "",

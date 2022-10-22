@@ -23,15 +23,65 @@ def createCPU(options, processes, system):
     options.cse530_num_regs= 256
 
     # CPU configurations - extremes.
-    if options.cse530_core_config=="large":
+    if options.cse530_core_config==1:
         options.cse530_issue_width = 8
         options.branch_predictor = "ltage"
         options.cse530_num_robs= 192
         a4O3CPUConfig.initializeO3CPU(options, cpu)
-    elif options.cse530_core_config=="small":
+    elif options.cse530_core_config==2:
         options.cse530_issue_width = 2
         options.branch_predictor = "2bit"
         options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==3:
+        options.cse530_issue_width = 4
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==4:
+        options.cse530_issue_width = 6
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==5:
+        options.cse530_issue_width = 8
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==6:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "tournament"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==7:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "bimode"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==8:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "ltage"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==9:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 60
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==10:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 104
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==11:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 148
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==12:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 196
         a4O3CPUConfig.initializeO3CPU(options, cpu)
     else:
         raise ValueError("Unsupported cpu class.")
