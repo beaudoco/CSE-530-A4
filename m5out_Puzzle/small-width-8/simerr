@@ -1,3 +1,7 @@
-build_a4/build/X86/base/loader/image_file_data.cc:113: fatal: fatal condition fd < 0 occurred: Failed to open file ~/cse530_a4/benchmarks/Puzzle.
-This error typically occurs when the file path specified is incorrect.
-Memory Usage: 240432 KBytes
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build_a4/build/X86/mem/dram_interface.cc:692: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+0: system.remote_gdb: listening for remote gdb on port 7000
+build_a4/build/X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build_a4/build/X86/sim/syscall_emul.hh:1017: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/other/CSE530-FA2022/cse530_a4/benchmarks/Puzzle'
+build_a4/build/X86/sim/mem_state.cc:443: info: Increasing stack size by one page.

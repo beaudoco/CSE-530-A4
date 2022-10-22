@@ -3,7 +3,20 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 22.0.0.2
 gem5 compiled Oct 18 2022 00:41:42
-gem5 started Oct 22 2022 14:15:28
-gem5 executing on e5-cse-135-04.cse.psu.edu, pid 28234
-command line: /home/other/CSE530-FA2022/gem5/build_a4/build/X86/gem5.opt --outdir=m5out_Puzzle/small-ltage --redirect-stdout --redirect-stderr /home/grads/cpb5867/cse530_a4/cse530_a4_sys_config.py --cse530-core-config=8 '--binfile=~/cse530_a4/benchmarks/Puzzle'
+gem5 started Oct 22 2022 14:41:26
+gem5 executing on e5-cse-135-04.cse.psu.edu, pid 33965
+command line: /home/other/CSE530-FA2022/gem5/build_a4/build/X86/gem5.opt --outdir=m5out_Puzzle/small-ltage --redirect-stdout --redirect-stderr /home/grads/cpb5867/cse530_a4/cse530_a4_sys_config.py --cse530-core-config=8 --binfile=/home/other/CSE530-FA2022/cse530_a4/benchmarks/Puzzle
 
+Global frequency set at 1000000000000 ticks per second
+Beginning simulation!
+77
+2005
+77
+2005
+77
+2005
+77
+2005
+77
+2005
+Exiting @ tick 39667380000 because exiting with last active thread context
