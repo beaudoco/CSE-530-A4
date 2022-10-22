@@ -1,0 +1,3 @@
+build_a4/build/X86/base/loader/image_file_data.cc:113: fatal: fatal condition fd < 0 occurred: Failed to open file ~/cse530_a4/benchmarks/Puzzle.
+This error typically occurs when the file path specified is incorrect.
+Memory Usage: 240432 KBytes
