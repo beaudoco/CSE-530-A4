@@ -1,6 +1,6 @@
 warn: No dot file generated. Please install pydot to generate the dot file and pdf.
 build_a4/build/X86/mem/dram_interface.cc:692: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
-0: system.remote_gdb: listening for remote gdb on port 7000
+0: system.remote_gdb: listening for remote gdb on port 7001
 build_a4/build/X86/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
 build_a4/build/X86/sim/syscall_emul.hh:1017: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
       Returning '/home/other/CSE530-FA2022/cse530_a4/benchmarks/Puzzle'
