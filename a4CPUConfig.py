@@ -83,6 +83,21 @@ def createCPU(options, processes, system):
         options.branch_predictor = "2bit"
         options.cse530_num_robs= 196
         a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==13:
+        options.cse530_issue_width = 2
+        options.branch_predictor = "ltage"
+        options.cse530_num_robs= 196
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==14:
+        options.cse530_issue_width = 8
+        options.branch_predictor = "ltage"
+        options.cse530_num_robs= 16
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
+    elif options.cse530_core_config==15:
+        options.cse530_issue_width = 8
+        options.branch_predictor = "2bit"
+        options.cse530_num_robs= 196
+        a4O3CPUConfig.initializeO3CPU(options, cpu)
     else:
         raise ValueError("Unsupported cpu class.")
 
