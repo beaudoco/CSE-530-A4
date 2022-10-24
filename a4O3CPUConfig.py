@@ -37,25 +37,21 @@ def initializeO3CPU(options, o3cpu):
     o3cpu.LSQDepCheckShift = 2
 
     if options.cse530_issue_width == 2:
-        o3cpu.numROBEntries = 64
         o3cpu.numIQEntries = 16
         o3cpu.LQEntries = 16
         o3cpu.SQEntries = 20
         o3cpu.fuPool = Cse530O4FUPool()
     elif options.cse530_issue_width == 4:
-        o3cpu.numROBEntries = 96
         o3cpu.numIQEntries = 24
         o3cpu.LQEntries = 24
         o3cpu.SQEntries = 30
         o3cpu.fuPool = Cse530O4FUPool()
     elif options.cse530_issue_width == 6:
-        o3cpu.numROBEntries = 192
         o3cpu.numIQEntries = 28
         o3cpu.LQEntries = 42
         o3cpu.SQEntries = 36
         o3cpu.fuPool = Cse530O4FUPool()
     elif options.cse530_issue_width == 8:
-        o3cpu.numROBEntries = 224
         o3cpu.numIQEntries = 64
         o3cpu.LQEntries = 72
         o3cpu.SQEntries = 56
