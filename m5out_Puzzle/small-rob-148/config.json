@@ -879,7 +879,7 @@
             "numPhysIntRegs": 256,
             "numPhysVecPredRegs": 32,
             "numPhysVecRegs": 256,
-            "numROBEntries": 64,
+            "numROBEntries": 148,
             "numRobs": 1,
             "numThreads": 1,
             "power_gating_on_idle": false,
