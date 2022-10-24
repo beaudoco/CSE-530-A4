@@ -101,7 +101,7 @@ def createCPU(options, processes, system):
     elif options.cse530_core_config==16:
         options.cse530_issue_width = 8
         options.branch_predictor = "ltage"
-        options.cse530_num_robs= 60
+        options.cse530_num_robs= 104
         a4O3CPUConfig.initializeO3CPU(options, cpu)
     else:
         raise ValueError("Unsupported cpu class.")
